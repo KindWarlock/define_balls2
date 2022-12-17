@@ -79,7 +79,7 @@ while True:
         cv2.imshow('video', frame)
         pos_frame = cap.get(cv2.CAP_PROP_POS_FRAMES)
     else:
-        cap.set(cv2.CAP_PROP_POS_FRAMES, pos_frame-1)
+        cap.set(cv2.CAP_PROP_POS_FRAMES, cv2.CAP_PROP_POS_FRAMES-1)
         cv2.waitKey(1000)
 
     if cv2.waitKey(10) == 27:
